@@ -33,8 +33,15 @@ void main() => runApp( MaterialApp(
       ),
     ),
     backgroundColor: Colors.white,
+    bottomNavigationBar: BottomNavigationBar(
+      backgroundColor: Colors.limeAccent.shade400,
+      items: [
+        BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet),tooltip: 'Wllet'),
+        BottomNavigationBarItem(icon: Icon(Icons.add_shopping_cart),tooltip: 'Cart'),
+        BottomNavigationBarItem(icon: Icon(Icons.account_circle),tooltip: 'Profile'),
+      ],
+    ),
   ),
 )
-
 );
 
