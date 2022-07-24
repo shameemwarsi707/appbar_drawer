@@ -4,7 +4,7 @@ void main() => runApp( MaterialApp(
   debugShowCheckedModeBanner: false,
   home: Scaffold(
     appBar: AppBar(
-      backgroundColor: Colors.red.shade400,
+      backgroundColor: Colors.blue.shade400,
       title: Text('List'),
       actions: <Widget>[
         IconButton(onPressed: ()=>debugPrint("Item Search"), icon: Icon(Icons.search),),
@@ -35,10 +35,11 @@ void main() => runApp( MaterialApp(
     backgroundColor: Colors.white,
     bottomNavigationBar: BottomNavigationBar(
       backgroundColor: Colors.limeAccent.shade400,
-      items: [
-        BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet),tooltip: 'Wllet'),
-        BottomNavigationBarItem(icon: Icon(Icons.add_shopping_cart),tooltip: 'Cart'),
-        BottomNavigationBarItem(icon: Icon(Icons.account_circle),tooltip: 'Profile'),
+     // currentIndex: 0,
+      items: const <BottomNavigationBarItem> [
+        BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet),label: 'Data',),
+        BottomNavigationBarItem(icon: Icon(Icons.add_shopping_cart),label: 'Cart',),
+        BottomNavigationBarItem(icon: Icon(Icons.account_circle),label: 'Profile',),
       ],
     ),
   ),
